@@ -1,0 +1,10 @@
+include:
+  - ./mysql/docker-compose.mysql.yml
+  - ./postgres/docker-compose.postgres.yml
+  - ./keycloak/docker-compose.keycloak.yml
+  - ./kafka/docker-compose.kafka.yml
+  - ./redis/docker-compose.redis.yml
+
+networks:
+  hrms-network:
+    driver: bridge
